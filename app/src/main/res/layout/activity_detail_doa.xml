@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/gambarkeempat"
+    android:layout_height="match_parent"
+    tools:context=".DetailDoa">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="178dp"
+        tools:layout_editor_absoluteY="204dp">
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+        <TextView
+            android:id="@+id/tv_link"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+
+        <TextView
+            android:id="@+id/tv_doadetail"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:text="Doa"
+            android:textAllCaps="true"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:paddingTop="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/ic_rectangle_48"/>
+
+        <TextView
+            android:id="@+id/tv_textdoa"
+            android:layout_width="match_parent"
+            android:layout_height="249dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/ic_bacrond"
+            android:layout_marginTop="30dp" />
+        <TextView
+            android:id="@+id/tv_doaarti"
+            android:background="@drawable/ic_bacrond"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="30dp" />
+<!--        <WebView-->
+<!--            android:id="@+id/webViewDoa"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="365dp"-->
+<!--            android:layout_margin="20dp" />-->
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/kembalidoa"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_bg_button_keluar"
+                android:text="Stop" />
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/playdoa"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ic_bg_button"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Play"/>
+
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/btn_pausedoa"
+                android:layout_weight="1"
+                android:layout_marginRight="0dp"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_bg_button_keluar"
+                android:text="Pause"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

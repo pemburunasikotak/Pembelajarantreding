@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "861248224576",
+    "project_id": "doaagamahindu",
+    "storage_bucket": "doaagamahindu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:861248224576:android:c6b9f4334a44d4a77ecea5",
+        "android_client_info": {
+          "package_name": "com.example.doaagamahindu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "861248224576-ur6ckuce5p1m4a48q94rfd8kcha6n66m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6F2CwUjaO_B1h0wz3CCfPJ0NdIeksgaU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "861248224576-ur6ckuce5p1m4a48q94rfd8kcha6n66m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
