@@ -15,8 +15,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-
         btn_keluar.setOnClickListener {
             alertClick(btn_keluar)
         }
@@ -44,16 +42,4 @@ class MainActivity : AppCompatActivity() {
                 })
                 .show()
     }
-//
-//    override fun onBackPressed() {
-//        val builder = AlertDialog.Builder(this)
-//        builder.setTitle("Apakah kamu yakin")
-//        builder.setMessage("Keluar dari applikasi")
-//        builder.setPositiveButton("Yes",{ dialogInterface: DialogInterface, i: Int ->
-//            finish()
-//        })
-//        builder.setPositiveButton("No",{ dialogInterface: DialogInterface, i: Int -> })
-//        builder.show()
-//        super.onBackPressed()
-//    }
 }

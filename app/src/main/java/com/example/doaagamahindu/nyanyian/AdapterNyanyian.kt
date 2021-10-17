@@ -14,8 +14,6 @@ import com.example.doaagamahindu.R
 
 class AdapterNyanyian(private val context: Context, private val list:List<ModelNyanyian>)
     :RecyclerView.Adapter<AdapterNyanyian.HomePemesanHolder>(){
-
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AdapterNyanyian.HomePemesanHolder {
         val view: View= LayoutInflater.from(parent.context).inflate(
                 R.layout.list_daftar_nyanyian, parent, false

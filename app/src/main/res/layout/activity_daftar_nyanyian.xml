@@ -4,8 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gambarpertama"
+        android:background="@drawable/gambarpertama"
     tools:context=".doa.DaftarDoa">
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,10 +18,11 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="80dp"
             android:layout_marginTop="40dp"
-            android:text="DAFTAR NYANYIAN ATAU KIDUNG"
+            android:text="BELAJAR TREDING INTERMEDIET"
             android:textSize="25dp"
             android:textAllCaps="true"
             android:textStyle="bold"

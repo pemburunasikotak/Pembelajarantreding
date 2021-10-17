@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gambarpertama"
     tools:context=".nyanyian.DaftarNyanyian">
-
+<!--    android:background="@drawable/gambarpertama"-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -16,10 +15,11 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="50dp"
+            android:layout_gravity="center"
             android:layout_marginTop="40dp"
-            android:text="DAFTAR DOA "
+            android:text="BELajar trading pemula "
             android:textSize="20dp"
             android:textAllCaps="true"
             android:textStyle="bold"

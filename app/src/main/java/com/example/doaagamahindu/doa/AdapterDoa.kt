@@ -25,19 +25,6 @@ class AdapterDoa(val items: List<ModelDoa>
 
     override fun onBindViewHolder(holder: AdapterDoa.HomePemesanHolder, position: Int) {
         holder.bind(items[position],clickListener)
-//        val list= list[position]
-//        holder.tv_name.text = list.name
-//
-//        holder.itemView.setOnClickListener {
-//            val bundel = Bundle()
-//            bundel.putString("id", list.id)
-//            bundel.putString("nama", list.name)
-//            bundel.putString("link", list.link)
-//            val intent = Intent(context, DetailDoa::class.java)
-//            intent.putExtras(bundel)
-//            context.startActivity(intent)
-//        }
-
     }
 
     override fun getItemCount():Int {
@@ -46,10 +33,8 @@ class AdapterDoa(val items: List<ModelDoa>
 
 
     inner class HomePemesanHolder(view: View) : RecyclerView.ViewHolder(view) {
-//        var tv_name: TextView = view.findViewById(R.id.tv_doa)
         fun bind(modeldoa: ModelDoa, clickListener: (ModelDoa) -> Unit){
             itemView.tv_doa.text = modeldoa.name
-//            itemView.tv_list_name.text =person.email
             itemView.setOnClickListener {
                 clickListener(modeldoa)
             }

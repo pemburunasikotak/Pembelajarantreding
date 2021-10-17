@@ -9,17 +9,16 @@ import com.example.doaagamahindu.R
 import kotlinx.android.synthetic.main.activity_daftar_doa.*
 
 class DaftarDoa : AppCompatActivity() {
-
-    //private var list : MutableList<ModelDoa> = ArrayList()
-    //private lateinit var rvData: RecyclerView
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_daftar_doa)
       //  rvData = findViewById(R.id.rv_doa)
        // rvData.setHasFixedSize(true)
         val modeldoa = ArrayList<ModelDoa>()
-        modeldoa.add(ModelDoa("1","Bangun pagi","\"Oḿ Utedānīm bhagavantaḥ syāmota prapitva utamadhye ahnam, utoditā maghavanta sūryasya vayaḿ devānām sumatau syāma","Ya Tuhan, hamba memuja-Mu, vahwa hamba telah bangun pagi dalam keadaan selamat",R.raw.bangun_pagi))
+        modeldoa.add(ModelDoa("1","Bangun pagi","\"Oḿ Utedānīm bhagavantaḥ syāmota prapitva utamadhye ahnam," +
+                " utoditā maghavanta sūryasya vayaḿ devānām sumatau syāma","Ya Tuhan, hamba memuja-Mu, " +
+                "vahwa hamba telah bangun pagi dalam keadaan selamat",
+                R.raw.bangun_pagi))
         modeldoa.add(ModelDoa("2","Doa Menolak bahaya","\"Om Om Asta Maha Bayaya\n" +
                 "Om Sarwa Dewa, Sarwa Sanjata, Sarwa Warna Ya Namah,\n" +
                 "Om Atma Raksaya, Sarwa Satru, Winasaya Namah Swaha\n",
@@ -115,25 +114,16 @@ class DaftarDoa : AppCompatActivity() {
             R.raw.mohon_umur_panjang
         ))
 
-
-
-
-
         rv_doa.layoutManager =LinearLayoutManager(this)
         rv_doa.adapter = AdapterDoa(modeldoa, {modeldoa -> personItemClicked(modeldoa as ModelDoa)  })
-
-    }
-
-
-
-    private fun personItemClicked(person: ModelDoa) {
+   }
+        private fun personItemClicked(person: ModelDoa) {
 
         val bundel = Bundle()
         bundel.putString("name", person.name)
         bundel.putString("doatext", person.doatext)
         bundel.putString("doaarti", person.doatextarti)
         bundel.putInt("lagu",person.doasuara)
-//        bundel.("goldar",person.doasuara)
         val intent = Intent(this,DetailDoa::class.java)
         intent.putExtras(bundel)
         startActivity(intent)

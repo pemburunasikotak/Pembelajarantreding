@@ -32,9 +32,6 @@ class DetailDoa : AppCompatActivity() {
         setContentView(R.layout.activity_detail_doa)
 
         val bundle = intent.extras
-
-
-
         tv_doadetail.setText((bundle?.getString("name")))
         tv_textdoa.setText((bundle?.getString("doatext")))
         tv_doaarti.setText((bundle?.getString("doaarti")))
