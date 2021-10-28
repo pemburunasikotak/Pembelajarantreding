@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.doaagamahindu">
+    package="com.example.belajartreding">
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
@@ -14,10 +14,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DoaAgamaHindu">
         <activity android:name=".DetailDoa"/>
-        <activity android:name=".DetailNyanyian" />
+        <activity android:name=".Detail" />
         <activity android:name=".doa.DaftarDoa" />
-        <activity android:name=".nyanyian.DaftarNyanyian" />
-        <activity android:name=".MainActivity"
+        <activity android:name=".HomeAdmin" />
+        <activity android:name=".TambahData" />
+        <activity android:name=".treding.DaftarTreding" />
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".Login"
             tools:ignore="IntentFilterExportedReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

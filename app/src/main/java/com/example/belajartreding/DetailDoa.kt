@@ -1,4 +1,4 @@
-package com.example.doaagamahindu
+package com.example.belajartreding
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -12,7 +12,8 @@ import android.widget.Button
 import android.widget.SeekBar
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.doaagamahindu.doa.DaftarDoa
+import com.example.belajartreding.R
+import com.example.belajartreding.doa.DaftarDoa
 import com.google.android.youtube.player.YouTubeBaseActivity
 import com.google.android.youtube.player.YouTubeInitializationResult
 import com.google.android.youtube.player.YouTubePlayer

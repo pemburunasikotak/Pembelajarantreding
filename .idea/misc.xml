@@ -3,14 +3,29 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/tjk/DoaAgamaHindu/DoaAgamaHindu/app/src/main/res/drawable-v24/ic_bg_button.xml" value="0.2725" />
+        <entry key="..\:/Users/tjk/DoaAgamaHindu/DoaAgamaHindu/app/src/main/res/drawable-v24/ic_bg_button_keluar.xml" value="0.2725" />
+        <entry key="..\:/Users/tjk/DoaAgamaHindu/DoaAgamaHindu/app/src/main/res/drawable-v24/ic_bg_ijoradius.xml" value="0.2725" />
+        <entry key="..\:/Users/tjk/DoaAgamaHindu/DoaAgamaHindu/app/src/main/res/drawable-v24/ic_bg_ijoradius5.xml" value="0.2725" />
+        <entry key="..\:/Users/tjk/DoaAgamaHindu/DoaAgamaHindu/app/src/main/res/drawable-v24/ic_bg_merah.xml" value="0.2725" />
+        <entry key="..\:/Users/tjk/DoaAgamaHindu/DoaAgamaHindu/app/src/main/res/drawable-v24/ic_bg_putih.xml" value="0.2725" />
         <entry key="..\:/Users/tjk/DoaAgamaHindu/DoaAgamaHindu/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.17" />
+        <entry key="..\:/Users/tjk/DoaAgamaHindu/DoaAgamaHindu/app/src/main/res/drawable/bagroud_hijau.xml" value="0.3635" />
+        <entry key="..\:/Users/tjk/DoaAgamaHindu/DoaAgamaHindu/app/src/main/res/drawable/ic_bacrond.xml" value="0.2725" />
+        <entry key="..\:/Users/tjk/DoaAgamaHindu/DoaAgamaHindu/app/src/main/res/drawable/ic_bg_ijo.xml" value="0.2725" />
+        <entry key="..\:/Users/tjk/DoaAgamaHindu/DoaAgamaHindu/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2725" />
+        <entry key="..\:/Users/tjk/DoaAgamaHindu/DoaAgamaHindu/app/src/main/res/drawable/ic_rectangle_48.xml" value="0.2725" />
+        <entry key="..\:/Users/tjk/DoaAgamaHindu/DoaAgamaHindu/app/src/main/res/layout/activity_admin_login.xml" value="0.2677083333333333" />
         <entry key="..\:/Users/tjk/DoaAgamaHindu/DoaAgamaHindu/app/src/main/res/layout/activity_daftar_doa.xml" value="0.2453125" />
         <entry key="..\:/Users/tjk/DoaAgamaHindu/DoaAgamaHindu/app/src/main/res/layout/activity_daftar_nyanyian.xml" value="0.2453125" />
         <entry key="..\:/Users/tjk/DoaAgamaHindu/DoaAgamaHindu/app/src/main/res/layout/activity_detail_doa.xml" value="0.1609375" />
         <entry key="..\:/Users/tjk/DoaAgamaHindu/DoaAgamaHindu/app/src/main/res/layout/activity_detail_nyanyian.xml" value="0.2453125" />
+        <entry key="..\:/Users/tjk/DoaAgamaHindu/DoaAgamaHindu/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Users/tjk/DoaAgamaHindu/DoaAgamaHindu/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/tjk/DoaAgamaHindu/DoaAgamaHindu/app/src/main/res/layout/activity_tambah_data.xml" value="0.22" />
         <entry key="..\:/Users/tjk/DoaAgamaHindu/DoaAgamaHindu/app/src/main/res/layout/list_daftar_doa.xml" value="0.1609375" />
         <entry key="..\:/Users/tjk/DoaAgamaHindu/DoaAgamaHindu/app/src/main/res/layout/list_daftar_nyanyian.xml" value="0.146875" />
+        <entry key="..\:/Users/tjk/DoaAgamaHindu/DoaAgamaHindu/app/src/main/res/layout/login.xml" value="0.2677083333333333" />
       </map>
     </option>
   </component>

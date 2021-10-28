@@ -1,4 +1,4 @@
-package com.example.doaagamahindu
+package com.example.belajartreding
 
 import org.junit.Test
 

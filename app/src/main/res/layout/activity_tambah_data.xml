@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="tambah data"/>
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Kategori"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/et_kategori"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint=""
+            android:background="@drawable/radius"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColorHint="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Link"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/et_addlink"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint=""
+            android:background="@drawable/radius"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColorHint="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="282dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="Penjelasan"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/et_addpenjelasan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectangel"
+            android:hint=""
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColorHint="@color/black" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_batal"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_bg_merah"
+            android:text="Batal"/>
+        <Button
+            android:id="@+id/btn_simpan"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/ic_bg_ijoradius"
+            android:text="simpan"/>
+    </LinearLayout>
+</LinearLayout>

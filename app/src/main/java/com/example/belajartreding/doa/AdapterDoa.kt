@@ -1,14 +1,10 @@
-package com.example.doaagamahindu.doa
+package com.example.belajartreding.doa
 
-import android.content.Intent
-import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.doaagamahindu.DetailDoa
-import com.example.doaagamahindu.R
+import com.example.belajartreding.R
 import kotlinx.android.synthetic.main.list_daftar_doa.view.*
 
 class AdapterDoa(val items: List<ModelDoa>
@@ -16,14 +12,14 @@ class AdapterDoa(val items: List<ModelDoa>
     :RecyclerView.Adapter<AdapterDoa.HomePemesanHolder>(){
 
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AdapterDoa.HomePemesanHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HomePemesanHolder {
         val view: View= LayoutInflater.from(parent.context).inflate(
                 R.layout.list_daftar_doa, parent, false
         )
         return HomePemesanHolder(view)
     }
 
-    override fun onBindViewHolder(holder: AdapterDoa.HomePemesanHolder, position: Int) {
+    override fun onBindViewHolder(holder: HomePemesanHolder, position: Int) {
         holder.bind(items[position],clickListener)
     }
 

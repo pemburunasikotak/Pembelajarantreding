@@ -1,11 +1,11 @@
-package com.example.doaagamahindu.doa
+package com.example.belajartreding.doa
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.doaagamahindu.DetailDoa
-import com.example.doaagamahindu.R
+import com.example.belajartreding.DetailDoa
+import com.example.belajartreding.R
 import kotlinx.android.synthetic.main.activity_daftar_doa.*
 
 class DaftarDoa : AppCompatActivity() {
@@ -15,23 +15,30 @@ class DaftarDoa : AppCompatActivity() {
       //  rvData = findViewById(R.id.rv_doa)
        // rvData.setHasFixedSize(true)
         val modeldoa = ArrayList<ModelDoa>()
-        modeldoa.add(ModelDoa("1","Bangun pagi","\"Oḿ Utedānīm bhagavantaḥ syāmota prapitva utamadhye ahnam," +
+        modeldoa.add(
+            ModelDoa("1","Bangun pagi","\"Oḿ Utedānīm bhagavantaḥ syāmota prapitva utamadhye ahnam," +
                 " utoditā maghavanta sūryasya vayaḿ devānām sumatau syāma","Ya Tuhan, hamba memuja-Mu, " +
                 "vahwa hamba telah bangun pagi dalam keadaan selamat",
-                R.raw.bangun_pagi))
-        modeldoa.add(ModelDoa("2","Doa Menolak bahaya","\"Om Om Asta Maha Bayaya\n" +
+                R.raw.bangun_pagi)
+        )
+        modeldoa.add(
+            ModelDoa("2","Doa Menolak bahaya","\"Om Om Asta Maha Bayaya\n" +
                 "Om Sarwa Dewa, Sarwa Sanjata, Sarwa Warna Ya Namah,\n" +
                 "Om Atma Raksaya, Sarwa Satru, Winasaya Namah Swaha\n",
             "Oh Sanghyang Widhi Wasa Penakluk Segala Macam Bahaya Dari Segala Penjuru, Hamba Memujamu Dalam Wujud Sinar Suci " +
                     "Dengan Beraneka Warna Dan Senjata Yang Ampuh. Oh Sanghyang Widhi Wasa Lindungilah Jiwa Kami. Semoga Semua Musuh Binasa",
-            R.raw.doa_terhindar_dari_segala_macam_bahaya))
-        modeldoa.add(ModelDoa("3",	"Doa Mandi",
+            R.raw.doa_terhindar_dari_segala_macam_bahaya)
+        )
+        modeldoa.add(
+            ModelDoa("3",	"Doa Mandi",
             "Om Cam Camani Ya Namah Swaha"+
                     "Om Waktra Parisudaha Ya Namah Swaha",
             "Ya Tuhan, Hamba Memujamu, Semoga Muka Hamba Menjadi Bersih",
             R.raw.mandi
-        ))
-        modeldoa.add(ModelDoa("4",	"Doa menjelang tidur",
+        )
+        )
+        modeldoa.add(
+            ModelDoa("4",	"Doa menjelang tidur",
             "Om asato ma sat ganaya\n" +
                     "Tamaso ma jayatir ganaya\n" +
                     "Mrityor mamritam gamaya\n",
@@ -39,8 +46,10 @@ class DaftarDoa : AppCompatActivity() {
                     "Dari jalan gelap ke jalan terang\n" +
                     "Hindarkanlah hamba dari kematian menuju kehidupan abadi\n",
             R.raw.menjelang_tidur
-        ))
-        modeldoa.add(ModelDoa("5",	"Doa Ampunan segala dosa",
+        )
+        )
+        modeldoa.add(
+            ModelDoa("5",	"Doa Ampunan segala dosa",
             "Om dewakrtasyainaso awaya janam\n" +
                     "asi manusyakrtasi nama awaya janam\n" +
                     "asipitra kitasi namo awaya janam asyatma\n" +
@@ -55,8 +64,10 @@ class DaftarDoa : AppCompatActivity() {
                     "terhadap dosa yang hamba lakukan dengan sadar atau tidak sadar. " +
                     "Sang Hyang Widhy Wasa semoga berkenan mengampuni semuanya itu.",
             R.raw.mohon_ampun_dlm_segala_dosa
-        ))
-        modeldoa.add(ModelDoa("6","Doa Mohon bimbingan tuhan",
+        )
+        )
+        modeldoa.add(
+            ModelDoa("6","Doa Mohon bimbingan tuhan",
         "Oṁ Asato mā sadyamaya\n" +
                 "tamaso mā jyotir gamayamrtyor mā\n" +
                 "amrtam gamaya,\n" +
@@ -75,8 +86,10 @@ class DaftarDoa : AppCompatActivity() {
                 "Hamba menyadari bahwa Engkaulah yang berada dalam setiap insani (jiwatman), \n" +
                 "menolong orang terpelajar pemimpin negara dan para pejabat. \n" +
                 "Hamba memuja Engkau semoga melimpahkan anugrah kekuatan kepada hamba.\n",
-        R.raw.mohon_bimbingan_tuhan))
-        modeldoa.add(ModelDoa("7",	"Mohon cinta kasih-Nya",
+        R.raw.mohon_bimbingan_tuhan)
+        )
+        modeldoa.add(
+            ModelDoa("7",	"Mohon cinta kasih-Nya",
             "Oṁ wicakrame prthiwim esa etām\n" +
                     "ksetrāya wisnur manuse dasasyan\n" +
                     "druwāso asya kirqya janāsa\n" +
@@ -85,8 +98,10 @@ class DaftarDoa : AppCompatActivity() {
                     "menjadikah tempat tinggal bagi manusia. Kaum yang hina aman sentosa di bawah lindungan-Nya. " +
                     "Yang mulia telah menjadikan bumi tempat yang lega bagi mereka.",
             R.raw.mohon_cinta_kasih_nya
-        ))
-        modeldoa.add(ModelDoa("8",	"Doa Mohon inspirasi",
+        )
+        )
+        modeldoa.add(
+            ModelDoa("8",	"Doa Mohon inspirasi",
             "Oṁ prano Dewi Saraswati\n" +
                     "wājebhir wājiniwati\n" +
                     "dhinam awiñyawantu.\n",
@@ -94,8 +109,10 @@ class DaftarDoa : AppCompatActivity() {
                     "Hyang Maha Agung dan Maha Kuasa, semoga Engkau memancarkan kekuatan rohani, " +
                     "kecerdasan pikiran, dan lindungilah hamba selama-lamanya.",
             R.raw.mohon_inspirasi
-        ))
-        modeldoa.add(ModelDoa("9",	"Doa untuk memohon ketenangan rumah tangga",
+        )
+        )
+        modeldoa.add(
+            ModelDoa("9",	"Doa untuk memohon ketenangan rumah tangga",
             "Oṁ prano Dewi Saraswati\n" +
                     "wājebhir wājiniwati\n" +
                     "dhinam awiñyawantu.\n",
@@ -103,8 +120,10 @@ class DaftarDoa : AppCompatActivity() {
                     "Hyang Maha Agung dan Maha Kuasa, semoga Engkau memancarkan kekuatan rohani, " +
                     "kecerdasan pikiran, dan lindungilah hamba selama-lamanya.",
             R.raw.mohon_inspirasi
-        ))
-        modeldoa.add(ModelDoa("10",	"Mohon umur panjang",
+        )
+        )
+        modeldoa.add(
+            ModelDoa("10",	"Mohon umur panjang",
             "Oṁ Taccaksur dewahitam sukram uccarat\n" +
                     "pasyema saradah satam\n" +
                     "jiwema saradah satam\n",
@@ -112,7 +131,8 @@ class DaftarDoa : AppCompatActivity() {
                     "semoga seratus tahun hamba selalu melihat mata yang bersinar ciptaanNya, " +
                     "semoga hamba hidup seratus tahun lamanya",
             R.raw.mohon_umur_panjang
-        ))
+        )
+        )
 
         rv_doa.layoutManager =LinearLayoutManager(this)
         rv_doa.adapter = AdapterDoa(modeldoa, {modeldoa -> personItemClicked(modeldoa as ModelDoa)  })
@@ -124,7 +144,7 @@ class DaftarDoa : AppCompatActivity() {
         bundel.putString("doatext", person.doatext)
         bundel.putString("doaarti", person.doatextarti)
         bundel.putInt("lagu",person.doasuara)
-        val intent = Intent(this,DetailDoa::class.java)
+        val intent = Intent(this, DetailDoa::class.java)
         intent.putExtras(bundel)
         startActivity(intent)
     }

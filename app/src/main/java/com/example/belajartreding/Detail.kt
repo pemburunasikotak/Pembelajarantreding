@@ -1,4 +1,4 @@
-package com.example.doaagamahindu
+package com.example.belajartreding
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,14 +7,14 @@ import android.view.View
 import android.webkit.WebView
 import android.widget.Button
 import android.widget.Toast
-import com.example.doaagamahindu.nyanyian.DaftarNyanyian
+import com.example.belajartreding.treding.DaftarTreding
 import com.google.android.youtube.player.YouTubeBaseActivity
 import com.google.android.youtube.player.YouTubeInitializationResult
 import com.google.android.youtube.player.YouTubePlayer
 import com.google.android.youtube.player.YouTubePlayerView
 import kotlinx.android.synthetic.main.activity_detail_nyanyian.*
 
-class DetailNyanyian :  YouTubeBaseActivity(){
+class Detail :  YouTubeBaseActivity(){
     private lateinit var webView: WebView
     private lateinit var btn:Button
     private lateinit var yutube:YouTubePlayerView
@@ -27,19 +27,20 @@ class DetailNyanyian :  YouTubeBaseActivity(){
     lateinit var youtubeplayerinit: YouTubePlayer.OnInitializedListener
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_detail_nyanyian)
+        setContentView(R.layout.activity_detail)
         val bundle = intent.extras
 
         tv_nyanyiandetail.setText((bundle?.getString("nama")))
         tv_nyanyianiddetail.setText((bundle?.getString("id")))
         tv_nyanyianlinkdetail.setText((bundle?.getString("link")))
+        materi.setText((bundle?.getString("materi")))
 
         val link =  tv_nyanyianlinkdetail.text.toString()
 
         Log.d("test",link)
 
         kembali.setOnClickListener {
-            val intent = Intent(this, DaftarNyanyian::class.java)
+            val intent = Intent(this, DaftarTreding::class.java)
             startActivity(intent)
         }
         initUi()
@@ -68,7 +69,6 @@ class DetailNyanyian :  YouTubeBaseActivity(){
             ) {
                 youtubePlayer?.loadVideo(link)
             }
-
             override fun onInitializationFailure(
                 p0: YouTubePlayer.Provider?,
                 p1: YouTubeInitializationResult?

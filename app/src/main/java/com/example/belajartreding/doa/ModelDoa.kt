@@ -1,4 +1,4 @@
-package com.example.doaagamahindu.doa
+package com.example.belajartreding.doa
 
 class ModelDoa (
     val id: String = "",

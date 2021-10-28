@@ -1,4 +1,4 @@
-package com.example.doaagamahindu.nyanyian
+package com.example.belajartreding.treding
 
 import android.content.Context
 import android.content.Intent
@@ -8,20 +8,19 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.doaagamahindu.DetailDoa
-import com.example.doaagamahindu.DetailNyanyian
-import com.example.doaagamahindu.R
+import com.example.belajartreding.Detail
+import com.example.belajartreding.R
 
-class AdapterNyanyian(private val context: Context, private val list:List<ModelNyanyian>)
-    :RecyclerView.Adapter<AdapterNyanyian.HomePemesanHolder>(){
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AdapterNyanyian.HomePemesanHolder {
+class AdapterTreding(private val context: Context, private val list:List<ModelTreding>)
+    :RecyclerView.Adapter<AdapterTreding.HomePemesanHolder>(){
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HomePemesanHolder {
         val view: View= LayoutInflater.from(parent.context).inflate(
                 R.layout.list_daftar_nyanyian, parent, false
         )
         return HomePemesanHolder(view)
     }
 
-    override fun onBindViewHolder(holder: AdapterNyanyian.HomePemesanHolder, position: Int) {
+    override fun onBindViewHolder(holder: HomePemesanHolder, position: Int) {
         val list= list[position]
         holder.tv_name.text = list.name
 
@@ -30,7 +29,8 @@ class AdapterNyanyian(private val context: Context, private val list:List<ModelN
             bundel.putString("id", list.id)
             bundel.putString("nama", list.name)
             bundel.putString("link", list.link)
-            val intent = Intent(context, DetailNyanyian::class.java)
+            bundel.putString("materi", list.materi)
+            val intent = Intent(context, Detail::class.java)
             intent.putExtras(bundel)
             context.startActivity(intent)
         }

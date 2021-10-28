@@ -1,33 +1,34 @@
 {
   "project_info": {
-    "project_number": "861248224576",
-    "project_id": "doaagamahindu",
-    "storage_bucket": "doaagamahindu.appspot.com"
+    "project_number": "451670354830",
+    "firebase_url": "https://belajartreding-13c14-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "belajartreding-13c14",
+    "storage_bucket": "belajartreding-13c14.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:861248224576:android:c6b9f4334a44d4a77ecea5",
+        "mobilesdk_app_id": "1:451670354830:android:71577df605dac3e2a912df",
         "android_client_info": {
-          "package_name": "com.example.doaagamahindu"
+          "package_name": "com.example.belajartreding"
         }
       },
       "oauth_client": [
         {
-          "client_id": "861248224576-ur6ckuce5p1m4a48q94rfd8kcha6n66m.apps.googleusercontent.com",
+          "client_id": "451670354830-v9tqtecpe9lm8c8ic0vdku99nmg7rhe4.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyB6F2CwUjaO_B1h0wz3CCfPJ0NdIeksgaU"
+          "current_key": "AIzaSyAMV7YYyLK4RpFXa7Gzp89SJy6VXN9HUUs"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "861248224576-ur6ckuce5p1m4a48q94rfd8kcha6n66m.apps.googleusercontent.com",
+              "client_id": "451670354830-v9tqtecpe9lm8c8ic0vdku99nmg7rhe4.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
